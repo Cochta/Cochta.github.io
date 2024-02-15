@@ -36,7 +36,7 @@ I used the stb_image library found here https://github.com/nothings/stb
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ C++
 int width, height, nr_channels;
-unsigned char *data = stbi_load("path to file", &width, &height, &nr_channels, 0);
+float *data = stbi_loadf("path to file", &width, &height, &nr_channels, 0);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Then i transformed the hdri file into 6 squares using a frame buffer
