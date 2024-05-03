@@ -16,8 +16,7 @@ A game lasts 1:30 minutes at the end of the time the player having the highest s
 
 The project was done in 1 month
 
-
-video of the game
+![A match played in real conditions](ressourceRollback/HeadShot.mp4)
 
 Goals
 --------------------------------------------------------------
@@ -48,7 +47,12 @@ The rollback engine has access to the current game and handles the confirm game.
 Game Logic
 ==============================================================
 
+General
+--------------------------------------------------------------
+
 Instead of creating complex architecture for the game logic I decided to include all the needed elements into the game class directly.
+
+It made my life a lot easier when I started implementing the rollback engine.
 
 Here are some examples:
 
@@ -56,10 +60,51 @@ Here are some examples:
 
 ![All the data the ball needs](ressourceRollback/ball.png)
 
+Inputs
+--------------------------------------------------------------
 
+To handle the inputs, I store them in a single byte using bit-shifting, it makes the input packets smaller to send them to the other player.
+
+![The input namespace with the Input system and the FrameInput struct](ressourceRollback/inputs.png)
+
+Then with some basic logic I process the inputs retrieved each frame.
+
+![The conditions for a player to move depending on the inputs](ressourceRollback/inputProcess.png)
+
+Copy method
+--------------------------------------------------------------
+
+For the rollback to work properly I have to copy the confirm game state into the current game state before doing a rollback.
+
+To ensure that all needed data is copied properly I copy it manually.
+
+Because the contact listener handles a pointer to the logic I have to set it again each time, otherwise it makes the game non deterministic for both players. 
+
+![The Copy method](ressourceRollback/copy.png)
 
 Networking
 ==============================================================
+
+![The networking is handled using the photon library](ressourceRollback/photon.png)
+
+I overrided all the needed functions from the photon lib, here I will show the ones that I use for the netcode of the game.
+
+ReceiveEvent
+--------------------------------------------------------------
+When a client received a packet, it stores it in a queue.
+
+Then, at the start of a frame the client loops throught all the packets, handles them and pops them.
+
+![The ReceiveEvent method](ressourceRollback/receiveEvent.png)
+
+joinRoomEventAction
+--------------------------------------------------------------
+
+When the first player joins a room (rooms are entirely handled by photon), his id is set to 0.
+
+When the second player joins a room, his id is set to 1, the game can start for both player and the rollback engine is setup aswell. 
+
+![The joinRoomEventAction method](ressourceRollback/joinRoom.png)
 
 Rollback engine
 ==============================================================
@@ -76,6 +121,8 @@ Rendering
 I thought that making the game playable in a web browser could be a good idea,
 that is why i chose raylib to render my game because it is compatible with empscripten and seamed easy to use.
 
+The web build still needs to be done.
+
 Conclusion
 ==============================================================
 
@@ -88,6 +135,8 @@ See Also
 ==============================================================
 
 [My GitHub page](https://github.com/Cochta).
+
+[My Itch.io page](https://cochta.itch.io).
 
 
 <style class="fallback">body {
