@@ -1,0 +1,98 @@
+<meta charset="utf-8" emacsmode="-*- markdown -*-">
+<link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/slate.css?">
+
+**Head shot Blogpost and documentation**
+Version 1.0
+
+Introduction
+==============================================================
+
+This blog post primarily explains how I created "Head Shot" and how I implemented the rollback.
+
+Head Shot is a small online game developed for the SAE Institute.
+
+Head Shot is a "Head-soccer like" game, 2 players can shoot a ball and score goals with it.
+A game lasts 1:30 minutes at the end of the time the player having the highest score wins.
+
+The project was done in 1 month
+
+
+video of the game
+
+Goals
+--------------------------------------------------------------
+
+Make a realtime responsive online multiplayer game.
+
+Implement a rollback engine.
+
+
+Using
+==============================================================
+
+Head Shot uses:
+- The raylib library to render and to play sounds.
+- The Bark physics engine developped by myself to simulate the physics. 
+- The Photon library for the netorking
+
+Architecture
+==============================================================
+
+The main application handles the networking, the rollback, the game logic and the rendering.
+
+The rollback engine has access to the current game and handles the confirm game.
+
+![the architecture](ressourceRollback/architecture.png)
+
+
+Game Logic
+==============================================================
+
+Instead of creating complex architecture for the game logic I decided to include all the needed elements into the game class directly.
+
+Here are some examples:
+
+![All the data a player needs](ressourceRollback/player.png)
+
+![All the data the ball needs](ressourceRollback/ball.png)
+
+
+
+Networking
+==============================================================
+
+Rollback engine
+==============================================================
+
+Rollback
+--------------------------------------------------------------
+
+Confirm frame
+--------------------------------------------------------------
+
+Rendering
+==============================================================
+
+I thought that making the game playable in a web browser could be a good idea,
+that is why i chose raylib to render my game because it is compatible with empscripten and seamed easy to use.
+
+Conclusion
+==============================================================
+
+Thank you for reading so far !!!
+==============================================================
+I honestly hope, you enjoyed it :)
+
+
+See Also
+==============================================================
+
+[My GitHub page](https://github.com/Cochta).
+
+
+<style class="fallback">body {
+    visibility: hidden
+}</style>
+<script>markdeepOptions = {tocStyle: 'long'};</script>
+<!-- Markdeep: -->
+<script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script>
