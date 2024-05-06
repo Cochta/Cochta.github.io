@@ -14,7 +14,7 @@ Head Shot is a small online game developed for the SAE Institute.
 Head Shot is a "Head-soccer like" game, 2 players can shoot a ball and score goals with it.
 A game lasts 1:30 minutes at the end of the time the player having the highest score wins.
 
-The project was done in 1 month
+The project was done in the scope of 1 month.
 
 ![A match played in real conditions](ressourceRollback/HeadShot.mp4)
 
@@ -109,27 +109,64 @@ When the second player joins a room, his id is set to 1, the game can start for 
 Rollback engine
 ==============================================================
 
+To implement the rollback engine, I decided to implement the rollback first and then add the confirm frame to it
+
 Rollback
 --------------------------------------------------------------
 
+Here is the implementation of my rollback method.
+
+![The DoRollback method](ressourceRollback/rollbackFunc.png)
+
+When running the simulation, after some time the game started to lag a lot.
+
+It was due to the lack of the confirm frame.
+
+In fact, when I profiled the sim, the game was rollbacking each frame from the very first frame of the game.
+
+![profiling before adding the confirm frame](ressourceRollback/tracyPreConfirm.png)
+
 Confirm frame
 --------------------------------------------------------------
+
+Here is the implementation of my method to confirm the frame.
+
+![The ConfirmFrame method](ressourceRollback/confirmFunc.png)
+
+After adding the logic to confirm the frame and stop rollbacking from the very first frame, the game stopped lagging and I could test the simulation until the end.
+
+After fixing some really small bugs, I couldn't make a single crash happen !!! I'm pretty sure my implementation is fine !  
+
+Here we can see that the game rollbacked trice within a frame and that the program handles it without problems and can handle a lot more.
+
+![profiling after adding the confirm frame](ressourceRollback/tracyPostConfirm.png)
+
+I calculated that my program can handle approximatively 16 seconds of rollback.
+
+Yes it is overkill but it proves it works well !!
 
 Rendering
 ==============================================================
 
 I thought that making the game playable in a web browser could be a good idea,
-that is why i chose raylib to render my game because it is compatible with empscripten and seamed easy to use.
+that is why I chose raylib to render my game because it is compatible with empscripten and seamed easy to use.
 
 The web build still needs to be done.
 
 Conclusion
 ==============================================================
 
+In conclusion, creating "Head Shot" was a rewarding experience that showcased the integration of raylib, Bark, and Photon libraries.
+
+Implementing the rollback engine and confirm frame was crucial for maintaining smooth, real-time gameplay and resolving performance issues. 
+
+The game runs without significant lags or crashes, indicating a successful and stable rollback mechanism. 
+
+The next step is to finalize the web build and to maybe add some fun features :)
+
 Thank you for reading so far !!!
 ==============================================================
 I honestly hope, you enjoyed it :)
-
 
 See Also
 ==============================================================
