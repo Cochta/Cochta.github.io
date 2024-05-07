@@ -75,7 +75,89 @@ $(function() {
   <div class="headertitle"><div class="title">Connect4 Documentation</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="doxygen_crawl.html"/>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md0"></a>About</h2>
+<p>This is the documentation of my network code for my online multiplayer turn-based game.</p>
+<p>By reading this, you will understand how to use my protocol.</p>
+
+<h2><a class="anchor" id="autotoc_md2"></a>Creating a new Packet</h2>
+  <p>To send data between server and clients i use an enum called PacketType.</p>
+  <p>The different types allow different data types to be sent and to be handled by the logic.</p>
+  <p>PacketType:</p>
+  <ul>
+  <li>Connect</li>
+  <li>StartGame</li>
+  <li>HasPlayed</li>
+  <li>GameFinished</li>
+  <li>Surrender</li>
+  <li>QuitLobby</li>
+  <li>Invalid</li>
+  </ul>
+<p>To create a new packet, some things must be done first.</p>
+<p>First, enter the new packet into the enum, for exemple: NewPacket.</p>
+<p>Then, create a new struct with Packet as final heritance and put all desired data in it.</p>
+<div class="fragment">
+  <div class="line">struct NewPacket final : Packet </div>
+  <div class="line">{</div>
+  <div class="line">  NewPacket() : Packet(PacketType::NewPacket) {}</div>
+  <div class="line">  int data = 0;</div>
+  <div class="line">};</div>
+</div>
+<p>After, override the << and >> operators.</p>
+<div class="fragment">
+  <div class="line">sf::Packet& operator<<(sf::Packet& packet, const NewPacket& content) {</div>
+  <div class="line">  return packet << content.data;</div>
+  <div class="line">}</div>
+  <div class="line"></div>
+  <div class="line">sf::Packet& operator>>(sf::Packet& packet, NewPacket& content) {</div>
+  <div class="line">  packet >> content.data;</div>
+  <div class="line">  return packet;</div>
+  <div class="line">}</div>
+</div>
+
+<p>Then, add the NewPacket in the 3 switch cases found in Packet.cpp</p>
+<p>In the FromType:</p>
+<div class="fragment">
+  <div class="line">case PacketType::NewPacket:</div>
+  <div class="line">  return new NewPacket();</div>
+</div>
+<p>In the sf::Packet& operator<<</p>
+<div class="fragment">
+  <div class="line">case PacketType::NewPacket: {</div>
+  <div class="line">  const auto& newPacket = dynamic_cast<const NewPacket&>(packetType);</div>
+  <div class="line">  packet << newPacket;</div>
+  <div class="line">  break;</div>
+  <div class="line">}</div>
+</div>
+<p>In the sf::Packet& operator>></p>
+<div class="fragment">
+  <div class="line">case PacketType::NewPacket: {</div>
+  <div class="line">  auto* newPacket = dynamic_cast<NewPacket*>(&packetType);</div>
+  <div class="line">  packet >> *newPacket;</div>
+  <div class="line">  break;</div>
+  <div class="line">}</div>
+</div>
+<h2><a class="anchor" id="autotoc_md2"></a>Network logic</h2>
+<h3><a class="anchor" id="autotoc_md2"></a>Server</h3>
+  <p>To execute code by the server when a packet is received, just put your logic in the following lambda.</p>
+  <div class="fragment">
+    <div class="line">server.ListenToClientPackets([](sf::TcpSocket* socket,Packet* packet) {</div>
+    <div class="line">  if (packet->type == PacketType::NewPacket) {</div>
+    <div class="line">    // your code logic</div>
+    <div class="line">  }</div>
+    <div class="line">});</div>
+  </div>
+<h3><a class="anchor" id="autotoc_md2"></a>Client</h3>
+<p>To execute code by the client their are some additionnal steps.</p>
+<p>First, at the start of the main loop, loop throught all the received packets, execute your code and pop them.</p>
+
+<div class="fragment">
+  <div class="line">while (Packet* packet = _client.PopPacket()) {</div>
+  <div class="line">  if (packet->type == PacketType::NewPacket) {</div>
+  <div class="line">    // your code logic</div>
+  <div class="line">  }</div>
+  <div class="line">}</div>
+</div>
+
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
