@@ -69,4 +69,35 @@ export const info = {
       // liveUrl: "https://github.com/Cochta/",
     },
   ],
+
+  blogs: [
+    {
+      title: "Bark",
+      isFeatured: true,
+      thumbnail: "/assets/images/profile.png",
+      githubUrl: "https://github.com/Cochta/Bark",
+      liveUrl: "/Blogposts/bark.html",
+    },
+    {
+      title: "OpenGl renderer",
+      isFeatured: true,
+      thumbnail: "/assets/images/profile.png",
+      githubUrl: "https://github.com/Cochta/OpenGL_3d_Renderer",
+      liveUrl: "/Blogposts/scene.html",
+    },
+    {
+      title: "Connect 4",
+      isFeatured: true,
+      thumbnail: "/assets/images/profile.png",
+      githubUrl: "https://github.com/Cochta/Connect-4",
+      liveUrl: "/Blogposts/connect4.html",
+    },
+    {
+      title: "Rollback",
+      isFeatured: true,
+      thumbnail: "/assets/images/profile.png",
+      githubUrl: "https://github.com/Cochta/Head-Shot",
+      liveUrl: "/Blogposts/rollback.html",
+    },
+  ],
 };
