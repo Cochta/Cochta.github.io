@@ -16,7 +16,7 @@ A game lasts 1:30 minutes at the end of the time the player having the highest s
 
 The project was done in the scope of 1 month.
 
-![A match played in real conditions](ressourceRollback/HeadShot.mp4)
+![A match played in real conditions](/ressources/ressourceRollback/HeadShot.mp4)
 
 Goals
 --------------------------------------------------------------
@@ -41,7 +41,7 @@ The main application handles the networking, the rollback, the game logic and th
 
 The rollback engine has access to the current game and handles the confirm game.
 
-![the architecture](ressourceRollback/architecture.png)
+![the architecture](/ressources/ressourceRollback/architecture.png)
 
 
 Game Logic
@@ -56,20 +56,20 @@ It made my life a lot easier when I started implementing the rollback engine.
 
 Here are some examples, the details are in the comments:
 
-![All the data a player needs](ressourceRollback/player.png)
+![All the data a player needs](/ressources/ressourceRollback/player.png)
 
-![All the data the ball needs](ressourceRollback/ball.png)
+![All the data the ball needs](/ressources/ressourceRollback/ball.png)
 
 Inputs
 --------------------------------------------------------------
 
 To handle the inputs, I store them in a single byte using bit-shifting, it makes the input packets smaller to send them to the other player.
 
-![The input namespace with the Input system and the FrameInput struct](ressourceRollback/inputs.png)
+![The input namespace with the Input system and the FrameInput struct](/ressources/ressourceRollback/inputs.png)
 
 Then with some basic logic I process the inputs retrieved each frame.
 
-![The conditions for a player to move depending on the inputs](ressourceRollback/inputProcess.png)
+![The conditions for a player to move depending on the inputs](/ressources/ressourceRollback/inputProcess.png)
 
 Copy method
 --------------------------------------------------------------
@@ -80,12 +80,12 @@ To ensure that all needed data is copied properly I copy it manually.
 
 Because the contact listener handles a pointer to the logic I have to set it again each time, otherwise it makes the game non deterministic for both players. 
 
-![The Copy method](ressourceRollback/copy.png)
+![The Copy method](/ressources/ressourceRollback/copy.png)
 
 Networking
 ==============================================================
 
-![The networking is handled using the photon library](ressourceRollback/photon.png)
+![The networking is handled using the photon library](/ressources/ressourceRollback/photon.png)
 
 I overrided all the needed functions from the photon lib, here I will show the ones that I use for the netcode of the game.
 
@@ -95,7 +95,7 @@ When a client received a packet, it stores it in a queue.
 
 Then, at the start of a frame the client loops throught all the packets, handles them and pops them.
 
-![The ReceiveEvent method](ressourceRollback/receiveEvent.png)
+![The ReceiveEvent method](/ressources/ressourceRollback/receiveEvent.png)
 
 joinRoomEventAction
 --------------------------------------------------------------
@@ -104,7 +104,7 @@ When the first player joins a room (rooms are entirely handled by photon), his i
 
 When the second player joins a room, his id is set to 1, the game can start for both player and the rollback engine is setup aswell. 
 
-![The joinRoomEventAction method](ressourceRollback/joinRoom.png)
+![The joinRoomEventAction method](/ressources/ressourceRollback/joinRoom.png)
 
 Rollback engine
 ==============================================================
@@ -116,7 +116,7 @@ Rollback
 
 Here is the implementation of my rollback method.
 
-![The DoRollback method](ressourceRollback/rollbackFunc.png)
+![The DoRollback method](/ressources/ressourceRollback/rollbackFunc.png)
 
 When running the simulation, after some time the game started to lag a lot.
 
@@ -124,14 +124,14 @@ It was due to the lack of the confirm frame.
 
 In fact, when I profiled the sim, the game was rollbacking each frame from the very first frame of the game.
 
-![profiling before adding the confirm frame](ressourceRollback/tracyPreConfirm.png)
+![profiling before adding the confirm frame](/ressources/ressourceRollback/tracyPreConfirm.png)
 
 Confirm frame
 --------------------------------------------------------------
 
 Here is the implementation of my method to confirm the frame.
 
-![The ConfirmFrame method](ressourceRollback/confirmFunc.png)
+![The ConfirmFrame method](/ressources/ressourceRollback/confirmFunc.png)
 
 After adding the logic to confirm the frame and stop rollbacking from the very first frame, the game stopped lagging and I could test the simulation until the end.
 
@@ -139,7 +139,7 @@ After fixing some really small bugs, I couldn't make a single crash happen !!! I
 
 Here we can see that the game rollbacked trice within a frame and that the program handles it without problems and can handle a lot more.
 
-![profiling after adding the confirm frame](ressourceRollback/tracyPostConfirm.png)
+![profiling after adding the confirm frame](/ressources/ressourceRollback/tracyPostConfirm.png)
 
 I calculated that my program can handle approximatively 16 seconds of rollback.
 
