@@ -20,23 +20,12 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-
-      - name: Setup Node.js environment with PNPM
-        uses: pnpm/action-setup@v2
+      - name: Install, build, and upload your site
+        uses: withastro/action@v2
         with:
-          version: 20 # Node.js version
-          package-manager: pnpm@latest # Use the latest version of pnpm
-
-      - name: Install dependencies and build the site
-        run: |
-          pnpm install
-          pnpm run build
-
-      - name: Upload site artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: site
-          path: ./dist # Adjust this path to where your built site files are located
+          path: . # The root location of your Astro project inside the repository. (optional)
+          node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
+          package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
   deploy:
     needs: build
@@ -45,17 +34,6 @@ jobs:
       name: github-pages
       url: https://cochta.github.io/ 
     steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v4
-
-      - name: Download site artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: site
-          path: ./dist # Adjust this path to where your built site files will be downloaded
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          folder: ./dist # Adjust this path to your built site files
