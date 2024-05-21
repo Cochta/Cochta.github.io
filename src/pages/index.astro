@@ -5,11 +5,19 @@ import Layout from "@layouts/Layout.astro";
 import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
 import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
+import BlogsWrapper from "@components/general/BlogsWrapper.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 
 const featureProjects = info.projects.reduce((accumulator, project) => {
   if (accumulator.length < 6 && project.isFeatured) {
     accumulator.push(project);
+  }
+  return accumulator;
+}, []);
+
+const featureBlogs = info.blogs.reduce((accumulator, blog) => {
+  if (accumulator.length < 6 && blog.isFeatured) {
+    accumulator.push(blog);
   }
   return accumulator;
 }, []);
@@ -31,8 +39,12 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
       <Experience title={"EXPERIENCE"} details={info.experience} />
       <Experience title={"EDUCATION"} details={info.education} />
       <section>
-        <h2 class="w-[15rem] dark:text-light mt-16">MY PROJECTS</h2>
+        <h2 class="w-[15rem] dark:text-light mt-16">Some Projects</h2>
         <ProjectsWrapper projects={featureProjects} />
+      </section>
+      <section>
+        <h2 class="w-[15rem] dark:text-light mt-16">Some Blogs</h2>
+        <BlogsWrapper blogs={featureBlogs} />
       </section>
     </Layout>
   </body>

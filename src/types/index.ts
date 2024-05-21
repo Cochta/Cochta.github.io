@@ -35,3 +35,18 @@ export interface IProjects {
 export interface IProjectDetails {
   projectDetail: IProject;
 }
+
+export interface IBlog {
+  title: string;
+  isFeatured: boolean;
+  thumbnail: string;
+  githubUrl: string;
+  liveUrl: string;
+}
+export interface IBlogs {
+  blogs: IBlog[];
+}
+
+export interface IBlogDetails {
+  blogDetail: IBlog;
+}
