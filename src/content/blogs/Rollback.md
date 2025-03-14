@@ -10,8 +10,6 @@ tags:
   - Rollback
   - Multiplayer
 ---
-**Head shot Blogpost and documentation**
-Version 1.0
 
 Introduction
 ==============================================================

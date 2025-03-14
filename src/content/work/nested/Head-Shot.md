@@ -6,20 +6,21 @@ img_alt: image of the game
 description: |
   I developped a small online 2 player head-soccer like game with a rollback engine
 tags:
-  - Dev
   - Online
+  - Real-time
   - Rollback
+  - 2D
 ---
 
 ### Overview
 
-Head-Shot is an online multiplayer game inspired by Head Soccer, developed in C++ with a custom rollback netcode engine. The project was a deep dive into real-time networking, latency compensation, and deterministic game logic.
+Head-Shot is an **online multiplayer** game inspired by Head Soccer, developed in **C++** with a **custom rollback netcode engine**. The project was a deep dive into **real-time networking**, **latency compensation**, and **deterministic game logic**.
 
-The primary challenge was implementing a rollback engine to ensure smooth online gameplay, even under high latency conditions. This involved synchronizing game states, predicting player inputs, and efficiently handling network corrections to maintain a seamless experience.
+The primary challenge was implementing a **rollback engine** to ensure **smooth online gameplay**, even under high latency conditions. This involved **synchronizing game states**, **predicting player inputs**, and efficiently **handling network corrections** to maintain a good gamefeel.
 
-Beyond networking, the game features physics-driven character movement, responsive controls, and competitive gameplay designed for fast-paced matches. Developing Head-Shot provided valuable experience in networking architecture, low-level optimization, and multiplayer game design.
+Beyond networking, the game features **physics-driven character movement**, **responsive controls**, and **competitive gameplay** designed for fast-paced matches. Developing Head-Shot provided valuable experience in **networking architecture**, **low-level optimization**, and **multiplayer game design**.
 
-Head-Shot uses "[Bark](/work/nested/bark)" my own physics engine. 
+Head-Shot uses "[**Bark**](/work/nested/bark)" my own **physics engine**. 
 
 ### How it looks like
 

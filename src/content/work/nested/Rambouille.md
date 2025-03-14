@@ -9,35 +9,34 @@ tags:
   - Unity
   - Plateformer
   - 2D
-  - Dev
 ---
 
 ### Overview
 
-Rambouille is a 2D platformer developed in Unity during the first year of my Bachelor's degree in Games Programming at SAE Institute Geneva. The project was an introduction to game development, focusing on gameplay mechanics, physics, and level design.
+Rambouille is a **2D platformer** developed in **Unity** during the **first year of my Bachelor's degree in Games Programming** at SAE Institute Geneva. The project was an **introduction to game development**, focusing on **gameplay mechanics**, **physics**, and **level design**.
 
-The game features fast-paced platforming challenges, requiring precise movement and timing. Throughout development, we worked on refining player controls, collision handling, and designing engaging levels to create a smooth and rewarding gameplay experience.
+The game features fast-paced **platforming challenges**, requiring **precise movement and timing**. Throughout development, I worked on refining **player controls**, **collision handling**, and **designing engaging levels** to create a smooth and rewarding **gameplay experience**.
 
-This project provided valuable experience in Unity's C# scripting, physics systems, and optimization techniques, laying the groundwork for more advanced game development projects in the future.
+This project provided valuable experience in **Unity's C# scripting**, **physics systems**, and **optimization techniques**, laying the **groundwork** for more **advanced game development projects in the future**.
 
 ### How it looks like
 
-Here is a demo on my itch.io page.
+Here is a **playable** demo.
 
 <iframe frameborder="0" src="https://itch.io/embed-upload/9193479?color=bababa" width="100%" height="580">a href="https://cochta.itch.io/rambouille">Play Rambouille on itch.io</a></iframe>
 
 ### What did I learn
 
-- Unity development using C#
-- 2D physics and collision handling
-- Implementing smooth and responsive player controls
-- Scene management and level transitions
-- Animation handling with Unity’s Animator
-- UI design and implementation (menus, HUD)
-- Designing engaging and challenging platforming mechanics
+- **Unity** development using **C#**
+- **2D physics** and **collision handling**
+- Implementing smooth and responsive **player controls**
+- **Scene management** and **level transitions**
+- **Animation handling** with **Unity’s Animator**
+- **UI design** and implementation (menus, HUD)
+- Designing engaging and **challenging platforming mechanics**
 - Balancing difficulty and player progression
-- Iterating on level design for better flow and pacing
-- Debugging and playtesting to improve the gameplay experience
+- Iterating on **level design** for better **flow** and pacing
+- Debugging and playtesting to **improve the gameplay experience**
 
 ### Source Code & Download
 

@@ -11,10 +11,6 @@ tags:
   - PBR
 ---
 
-**OpenGl 3d scene blogpost**
-Version 1.0
-
-
 This blog post tracks the evolution of my OpenGl 3d scene
 
 
@@ -39,7 +35,8 @@ Content
 Texture loading & Skybox
 ==============================================================
 
-![Skybox](/assets/ressources/ressourceScene/Skybox.png)
+<img alt="Skybox" width="100%" src="/assets/ressources/ressourceScene/Skybox.png" />
+  <p style="text-align:center">Skybox</p>
 
 To load this skybox texture found here: https://polyhaven.com/a/st_peters_square_night,
 I used the stb_image library found here https://github.com/nothings/stb
@@ -120,7 +117,9 @@ for (unsigned int i = 0; i < mesh->mNumVertices; i++) {
   }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-![Here we can see a street lamp and a brick ground](/assets/ressources/ressourceScene/loading.png)
+
+<img alt="loading obj and mat" width="100%" src="/assets/ressources/ressourceScene/loading.png" />
+  <p style="text-align:center">Here we can see a street lamp and a brick ground</p>
 
 
 Face culling
@@ -137,7 +136,10 @@ glCullFace(GL_BACK); // for the rest
 
 Here are 2 views with the camera inside the floor:
 
-![without culling](/assets/ressources/ressourceScene/noCull.png) ![with culling](/assets/ressources/ressourceScene/cull.png)
+<img alt="with culling" width="100%" src="/assets/ressources/ressourceScene/noCull.png" />
+  <p style="text-align:center">without culling</p>
+<img alt="with culling" width="100%" src="/assets/ressources/ressourceScene/cull.png" />
+  <p style="text-align:center">with culling</p>
 
 Physically Based Bloom 
 ==============================================================
@@ -145,7 +147,10 @@ Physically Based Bloom
 For my street lamp i wanted it to be the main light source of the scene and so i added a physically based bloom in post processing, 
 the bloom also works on the skybox "light sources".
 
-![without bloom](/assets/ressources/ressourceScene/noBloom.png) ![with bloom](/assets/ressources/ressourceScene/bloom.png)
+<img alt="without bloom" width="100%" src="/assets/ressources/ressourceScene/noBloom.png" />
+  <p style="text-align:center">without bloom</p>
+<img alt="with bloom" width="100%" src="/assets/ressources/ressourceScene/bloom.png" />
+<p style="text-align:center">with bloom</p>
 
 Basically, i apply bloom to all values that are superior to 1, it works for the skybox because it is in HDR (High Dynamic Range)
 
@@ -180,18 +185,25 @@ Deferred shading
 
 Firstly i draw all my objects inside a G buffer, i use all channels to store the data.
 
-![positions (RGB) and metallic (A)](/assets/ressources/ressourceScene/position.png) 
-![normals (RGB) and roughness (A)](/assets/ressources/ressourceScene/normal.png)
-![albedo (RGB) and ambient occlusion (A)](/assets/ressources/ressourceScene/albedo.png)
+
+<img alt="positions (RGB) and metallic (A)" width="100%" src="/assets/ressources/ressourceScene/position.png" />
+  <p style="text-align:center">positions (RGB) and metallic (A)</p>
+  <img alt="normals (RGB) and roughness (A)" width="100%" src="/assets/ressources/ressourceScene/normal.png" />
+  <p style="text-align:center">normals (RGB) and roughness (A)</p>
+  <img alt="albedo (RGB) and ambient occlusion (A)" width="100%" src="/assets/ressources/ressourceScene/albedo.png" />
+  <p style="text-align:center">albedo (RGB) and ambient occlusion (A)</p>
 
 Screen Space Ambient Occlusion (SSAO)
 ==============================================================
 
 Then i generate a texture to add some small shadows to the curvitude of the objects.
 
-![ssao texture](/assets/ressources/ressourceScene/ssao.png)
 
-then in the fragment shader i just multiply the basic ao by the ssao.
+<img alt="ssao texture" width="100%" src="/assets/ressources/ressourceScene/ssao.png" />
+  <p style="text-align:center">ssao texture</p>
+
+
+Then in the fragment shader i just multiply the basic ao by the ssao.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ glsl
 float ssao = texture(ssao_tex, texCoords).r;
@@ -205,7 +217,9 @@ Instead of a classic directional light i decided to have a point light, to have 
 
 Here are 3 of the textures so you can see how it looks like, (it is reversed, it is normal)
 
-![x-](/assets/ressources/ressourceScene/x-.png)![z+](/assets/ressources/ressourceScene/z+.png)![x+](/assets/ressources/ressourceScene/x+.png)
+<img alt="x-" width="33%" src="/assets/ressources/ressourceScene/x-.png" />
+<img alt="z+" width="33%" src="/assets/ressources/ressourceScene/z+.png" />
+<img alt="x+" width="33%" src="/assets/ressources/ressourceScene/x+.png" />
 
 PBR & IBL
 ==============================================================
@@ -230,12 +244,12 @@ The shader combines ambient lighting, direct lighting, and shadowing to compute 
 Thank you for reading so far !!!
 ==============================================================
 
-This is how the final scene looks like and i'm proud of it :)
-
-![final scene](/assets/ressources/ressourceScene/final.png)
+  <img alt="final scene" width="100%" src="/assets/ressources/ressourceScene/final.png" />
+  <p style="text-align:center">This is how the final scene looks like and i'm proud of it :)</p>
 
 
 See Also
 ==============================================================
 
-[My GitHub page](https://github.com/Cochta).
+- [GitHub Repository](https://github.com/Cochta/OpenGL_3d_Renderer)
+- [Download link](https://github.com/Cochta/OpenGL_3d_Renderer/releases/download/Release/release_opengl_scene.zip)

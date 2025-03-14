@@ -1,5 +1,5 @@
 ---
-title: bark
+title: Physics engine optimisation
 publishDate: 2020-03-04 00:00:00
 img: /assets/bark.png
 img_alt: physics motor base image
@@ -10,10 +10,6 @@ tags:
   - Quad Tree
   - C++
 ---
-
-**Bark Blogpost**
-Version 1.23
-
 
 This blog post primarily tracks the evolution of collision update optimization for the "Bark" physics engine.
 
@@ -56,13 +52,15 @@ But I quickly noticed that the program started to lag severely as soon as I adde
 
 Here is an example with 100 circles, 100 rectangles and 100 triangles.
 
-![89'700 checks](/assets/ressources/ressourceBark/Tracy_Update_AllXAll.PNG)
+  <img alt="89'700 checks" width="100%" src="/assets/ressources/ressourceBark/Tracy_Update_AllXAll.PNG" />
+  <p style="text-align:center">89'700 checks</p>
 
 <video controls width="100%">
   <source src="/assets/ressources/ressourceBark/Video_Update_AllXAll.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-We can see how slow and lagged it is
+<p style="text-align:center">We can see how slow and lagged it is</p>
+
 
 
 ### Second implementation
@@ -81,13 +79,15 @@ for (std::size_t i = 0; i < _colliders.size() - 1; ++i)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here is the same example with 100 circles, 100 rectangles and 100 triangles.
 
-![44'850 checks](/assets/ressources/ressourceBark/Tracy_Update_AllXOther.PNG)
+  <img alt="44'850 checks" width="100%" src="/assets/ressources/ressourceBark/Tracy_Update_AllXOther.PNG" />
+  <p style="text-align:center">44'850 checks</p>
 
 <video controls width="100%">
   <source src="/assets/ressources/ressourceBark/Video_Update_AllXOther.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-A bit faster and fewer lags but still not good enough
+<p style="text-align:center">A bit faster and fewer lags but still not good enough</p>
+
 
 
 QuadTree implementation
@@ -128,13 +128,15 @@ We can now see it is already way better than the naive implementation.
 
 Here is again the same example with 100 circles, 100 rectangles and 100 triangles.
 
-![The collision update now takes only half the frame](/assets/ressources/ressourceBark/Tracy_Update_QuadTree_First.PNG)
+  <img alt="The collision update now takes only half the frame" width="100%" src="/assets/ressources/ressourceBark/Tracy_Update_QuadTree_First.PNG" />
+  <p style="text-align:center">The collision update now takes only half the frame</p>
 
 <video controls width="100%">
   <source src="/assets/ressources/ressourceBark/Video_Update_QuadTree_First.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-We can see that it is way smoother
+  <p style="text-align:center">We can see that it is way smoother</p>
+
 
 #### Some statistics
 
@@ -201,9 +203,11 @@ For the second implementation the goal was to reduce the number of memory alloca
 
 To do so, instead of deleting and creating nodes at the start of the frame, I now use a vector of pre created nodes.
 
-![First implementation, at the start of the the frame, we see a huge spike of allocations/deallocations](/assets/ressources/ressourceBark/TracyMemoryFirst.png)
+  <img alt="First implementation" width="100%" src="/assets/ressources/ressourceBark/TracyMemoryFirst.png" />
+  <p style="text-align:center">First implementation, at the start of the the frame, we see a huge spike of allocations/deallocations</p>
 
-![Second implementation, the only allocations/deallocations left are those of the unordered_set](/assets/ressources/ressourceBark/TracyMemorySecond.png)
+  <img alt="Second implementation" width="100%" src="/assets/ressources/ressourceBark/TracyMemorySecond.png" />
+  <p style="text-align:center">Second implementation, the only allocations/deallocations left are those of the unordered_set</p>
 
 Thank you for reading so far !!!
 ==============================================================
