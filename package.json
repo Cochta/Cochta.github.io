@@ -1,5 +1,6 @@
 {
-  "name": "@example/minimal",
+  "name": "@example/portfolio",
+  "type": "module",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,13 +10,9 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "devDependencies": {
-    "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/tailwind": "^1.0.0",
-    "astro": "^1.0.0",
-    "astro-robots-txt": "^0.3.8"
-  },
   "dependencies": {
-    "jquery": "^3.7.1"
+    "astro": "^4.11.5",
+    "rehype-figure": "^1.0.1",
+    "remark-gfm": "^4.0.0"
   }
 }

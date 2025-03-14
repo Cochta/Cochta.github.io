@@ -1,22 +1,12 @@
-import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import robotsTxt from "astro-robots-txt";
-import sitemap from "@astrojs/sitemap";
-
 // https://astro.build/config
+
+import { defineConfig } from "astro/config";
+import remarkGfm from "remark-gfm";
+import rehypeFigure from "rehype-figure";
+
 export default defineConfig({
-  site: "https://cochta.github.io/",
-  sitemap: {
-    hostname: 'https://cochta.github.io/',
+  markdown: {
+    remarkPlugins: [remarkGfm],  // Enables table support
+    rehypePlugins: [rehypeFigure],  // Wraps images in <figure>
   },
-  integrations: [
-    tailwind(),
-    sitemap({
-      changefreq: "weekly",
-      priority: 0.7,
-      lastmod: new Date(),
-      entryLimit: 10000,
-    }),
-    robotsTxt(),
-  ],
 });
