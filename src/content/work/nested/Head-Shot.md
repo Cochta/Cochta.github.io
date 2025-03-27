@@ -33,20 +33,20 @@ A match played in real conditions
 
 ### What did I learn
 
-- Implementing rollback netcode for smooth online multiplayer gameplay
-- Handling input prediction and state synchronization to reduce latency effects
-- Managing network corrections and reconciling game states efficiently
+- Implementing **rollback netcode** for smooth **online multiplayer** gameplay
+- Handling **input prediction** and **state synchronization** to reduce latency effects
+- Managing **network corrections** and **reconciling game states** efficiently
 - Understanding and mitigating desynchronization issues
-- Developing a real-time physics-based game in C++
-- Ensuring deterministic behavior for consistent multiplayer synchronization
-- Optimizing game logic to handle real-time updates with minimal performance impact
-- Creating a responsive input system for competitive gameplay
-- Handling memory management and performance optimizations in C++
-- Implementing custom data structures to improve efficiency
-- Profiling and debugging network-related performance bottlenecks
-- Working on a complex multiplayer system from scratch
-- Testing and debugging networking issues in real-world conditions
-- Managing a project with high technical complexity and performance constraints
+- Developing a **real-time physics-based** game in **C++**
+- Ensuring **deterministic behavior** for consistent multiplayer synchronization
+- **Optimizing game logic** to handle **real-time updates** with minimal performance impact
+- Creating a **responsive input system** for competitive gameplay
+- Handling **memory management** and **performance optimizations** in **C++**
+- Implementing custom data structures to **improve efficiency**
+- **Profiling** and **debugging network-related** performance bottlenecks
+- Working on a **complex multiplayer system** from scratch
+- **Testing** and **debugging networking issues** in **real-time** conditions
+- Managing a project with **high technical complexity** and **performance constraints**
 
 ### Source Code & Download
 
