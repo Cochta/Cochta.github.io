@@ -21,15 +21,16 @@ We created a **Bullet Hell** game where you play as a **goat tethered by a rope*
 
 ### Team
 
-- Joey Gugler Art
-- Leonar Sadriu SFX and Music
 - **Constantin Verine (me): Code**
 - Olivier Pachoud: Code
 - Remy Lambert: Code
 - Alexis Haldy: Code
+- Joey Gugler Art
+- Leonar Sadriu SFX and Music
 
 ### How it looks like
 
+Here is a **gameplay** video:
 <iframe width="100%" height="460" src="https://www.youtube.com/embed/isPShvAzVTQ?si=PyDxEOg5UwCubLFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### What did I learn 
