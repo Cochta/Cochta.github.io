@@ -6,9 +6,9 @@ img_alt: gif of the game
 description: |
   A 3D stylized puzzle shooter set in the ancient ruins of the Crystalins, a lost race of living stones. Solve puzzles and use magic projectiles to restore their scattered crystals.
 tags:
-  - U Engine
+  - UE5
   - Puzzle Shooter
-  - Team
+  - Teamwork
   - Perforce
   - Wwise
 ---
