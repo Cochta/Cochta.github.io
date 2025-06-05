@@ -4,7 +4,7 @@ publishDate: 2023-12-01 00:00:00
 img: /assets/bark.gif
 img_alt: Image of the collision scene
 description: |
-  I developed a 2D physics engine from scratch with triggers, collisions and space subdivision
+  I developed a 2D physics engine from scratch with triggers, collisions and space subdivision. Later I upgraded it to a 3D version.
 tags:
   - C++
   - Physics

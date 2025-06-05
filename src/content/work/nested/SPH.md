@@ -6,9 +6,9 @@ img_alt: Prototype iamge
 description: |
   I developed an SPH Fluid Simulation for my Bachelor Project
 tags:
+  - Bachelor
   - SPH
   - C++
-  - Physics
   - Compute Shader
 ---
 
