@@ -1,6 +1,6 @@
 ---
 title: Rambouille
-publishDate: 2024-12-01 00:00:00
+publishDate: 2019-12-01 00:00:00
 img: /assets/Rambouille.gif
 img_alt: Image of the game
 description: |

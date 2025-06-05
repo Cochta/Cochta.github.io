@@ -1,6 +1,6 @@
 ---
 title: Ruby and The Lost Crystals
-publishDate: 2025-03-04 00:00:00
+publishDate: 2024-03-04 00:00:00
 img: /assets/rubyShowcase.gif
 img_alt: gif of the game
 description: |

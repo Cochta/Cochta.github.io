@@ -1,6 +1,6 @@
 ---
 title: Bark Physics Engine
-publishDate: 2024-12-01 00:00:00
+publishDate: 2023-12-01 00:00:00
 img: /assets/bark.png
 img_alt: Image of the collision scene
 description: |

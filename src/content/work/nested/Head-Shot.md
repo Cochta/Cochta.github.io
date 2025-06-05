@@ -1,6 +1,6 @@
 ---
 title: Head-Shot
-publishDate: 2024-11-01 00:00:00
+publishDate: 2021-11-01 00:00:00
 img: /assets/HeadShot.gif
 img_alt: image of the game
 description: |
