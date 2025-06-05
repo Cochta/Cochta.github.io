@@ -1,7 +1,7 @@
 ---
 title: Rollback Engine
 publishDate: 2019-12-01 00:00:00
-img: /assets/headshot.png
+img: /assets/ressources/ressourceRollback/architecture.png
 img_alt: in game image
 description: |
   I implemented a Rollback engine for a small 2 player head-soccer like game
