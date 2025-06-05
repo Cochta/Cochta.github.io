@@ -1,7 +1,7 @@
 ---
 title: Rambouille
 publishDate: 2024-12-01 00:00:00
-img: /assets/Rambouille.png
+img: /assets/Rambouille.gif
 img_alt: Image of the game
 description: |
   I developed a small 2d platformer prototype on Unity using free assets
@@ -40,6 +40,6 @@ Here is a **playable** demo.
 
 ### Source Code & Download
 
-- [GitHub Repository](https://github.com/Cochta/Rambouille).
+- [GitHub Repository](https://github.com/Cochta/Rambouille)
 - [Download link](https://github.com/Cochta/Rambouille/releases/download/V1.0/Rambouille.zip)
-- [Test it on my Itch.io page](https://cochta.itch.io/Rambouille).
+- [Test it on my Itch.io page](https://cochta.itch.io/Rambouille)

@@ -1,7 +1,7 @@
 ---
 title: Head-Shot
 publishDate: 2024-11-01 00:00:00
-img: /assets/headshot.png
+img: /assets/HeadShot.gif
 img_alt: image of the game
 description: |
   I developped a small online 2 player head-soccer like game with a rollback engine
@@ -50,6 +50,6 @@ A match played in real conditions
 
 ### Source Code & Download
 
-- [GitHub Repository](https://github.com/Cochta/Head-Shot).
+- [GitHub Repository](https://github.com/Cochta/Head-Shot)
 - [Download link](https://github.com/Cochta/Head-Shot/releases/download/1.0/Head.Shot.zip)
 

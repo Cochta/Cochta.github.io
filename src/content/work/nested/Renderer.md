@@ -1,7 +1,7 @@
 ---
 title: OpenGl 3d Renderer
 publishDate: 2024-10-01 00:00:00
-img: /assets/scene.png
+img: /assets/Scene.gif
 img_alt: Image of the scene
 description: |
    I Created a small 3d renderer in OpenGl
@@ -18,7 +18,9 @@ This project features a **fully rendered 3D scene** using **Physically Based Ren
 The objective was to explore **rasterization-based rendering** in depth. I began with fundamental concepts like rendering a **triangle**, working with **uniforms**, and applying **matrix transformations**. As I progressed, I implemented more **advanced techniques** such as **shadow mapping**, **deferred shading**, **PBR**, and **IBL**. The final result is a **fully realized 3D scene** that demonstrates my understanding of **modern graphics rendering techniques**.
 
 ### How it looks like
+Here is a **showcase** of the scene
 
+<img alt="Small gif" width="100%" src="/assets/scene.png" />
 
 
 ### Features that I implemented and learned to use

@@ -12,9 +12,28 @@ tags:
 ---
 
 ### Overview
+
+This project is a simple yet fully functional online **2-player Connect 4 game** built using the **SFML** library for graphics and networking, alongside a custom-built **TCP packet mannager**. The goal was to explore **network programming fundamentals** while creating a **turn based multiplayer game**.
+
 ### How it looks like
+
+
+
 ### What did I learn
+
+- **Turn based 2-player online gameplay** over **TCP**
+
+- **Server side lobby** handeling system
+
+- **SFML-based graphical interface** for the Connect 4 board
+
+- **Win detection** and **turn-based control**
+
+- Basic **server side** validation
+
+- Implementing my own physics engine for the first time in another project
+
 ### Source Code & Download
 
-- [GitHub Repository](https://github.com/Cochta/Connect-4).
+- [GitHub Repository](https://github.com/Cochta/Connect-4)
 - [Download link](https://github.com/Cochta/Connect-4/releases/download/V1.0/Release.zip)

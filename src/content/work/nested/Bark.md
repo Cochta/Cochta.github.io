@@ -45,6 +45,6 @@ To achieve this, **I implemented a custom mathematics library** (done with the h
 
 ### Source Code & Download
 
-- [GitHub Repository](https://github.com/Cochta/Bark).
+- [GitHub Repository](https://github.com/Cochta/Bark)
 - [Download link](https://github.com/Cochta/Bark/releases/download/1.0/SamplesRelease.zip)
-- [Test it on my Itch.io page](https://cochta.itch.io/bark-demo).
+- [Test it on my Itch.io page](https://cochta.itch.io/bark-demo)
