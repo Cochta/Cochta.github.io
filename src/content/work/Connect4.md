@@ -1,7 +1,7 @@
 ---
 title: Connect 4
 publishDate: 2019-10-02 00:00:00
-img: /assets/connect4.png
+img: /assets/Conect4.gif
 img_alt: Image of the game
 description: |
   I developed a small online 2 player connect 4 game using SFML library and my own TCP system
@@ -17,7 +17,9 @@ This project is a simple yet fully functional online **2-player Connect 4 game**
 
 ### How it looks like
 
+Here is a gif:
 
+<img alt="Small gif" width="100%" src="/assets/Conect4.gif" />
 
 ### What did I learn
 
