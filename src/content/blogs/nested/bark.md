@@ -1,7 +1,7 @@
 ---
 title: Physics engine optimisation
 publishDate: 2020-03-04 00:00:00
-img: /assets/bark.png
+img: /assets/bark.gif
 img_alt: physics motor base image
 description: |
   I developed a 2D physics engine and did some optimisation on a Quadtree
