@@ -31,27 +31,29 @@ In a fantasy world strewn with ruins, Ruby and her mysterious companion Sapphire
 - **Constantin Verine (me): Producer, Programmer & Audio Programmer**
 - Remy Lambert: Product Owner, Game & Level Designer
 - Olivier Pachoud: Lead Game Programmer, Graphics Programmer & Tech Artist
-- Alexis Haldy: Refactoring, Debugging
 
-**Main Game Art Team:**
+**Game Art Team:**
 - Isabelle Borcard: Lead Game Art
 - Eliot Depres: Main Level Artist
-
-**Game Art Team**
-- Mélissa Houriet: Made Sapphire's model.
-- Samuel Blanc: Made some gameplay models.
-
-**Main Audio Team:**
-- Samuel Rochat: Lead Audio & Wwise Implementation Expert
+- Diana Vadi: Graphic Designer & 2D Illustrator
 
 **Audio Team:**
-- Johan Walder
-- Yannis von Will
-- Killian Rossier
-- Luca Prati
-- Arber haxidema
-- Louise Durmaz
-- Dylan Fracheboud
+- Samuel Rochat: Lead Audio & Wwise Implementation Expert
+
+**Content Creation**
+- Bryan Mettraux Ramirez: Game Trailer Editor
+
+**Contributors:**
+- Johan Walder: Audio
+- Yannis von Will: Audio
+- Killian Rossier: Audio
+- Luca Prati: Audio
+- Arber haxidema: Audio
+- Louise Durmaz: Audio
+- Dylan Fracheboud: Audio
+- Alexis Haldy: Refactoring, Debugging
+- Mélissa Houriet: Made Sapphire's model.
+- Samuel Blanc: Made some gameplay models.
 
 ### How it looks like
 
