@@ -27,7 +27,7 @@ In a fantasy world strewn with ruins, Ruby and her mysterious companion Sapphire
 
 ### Team
 
-**Game Programming Team:**
+**Games Programming Team:**
 - **Constantin Verine (me): Producer, Programmer & Audio Programmer**
 - Remy Lambert: Product Owner, Game & Level Designer
 - Olivier Pachoud: Lead Game Programmer, Graphics Programmer & Tech Artist
@@ -35,25 +35,18 @@ In a fantasy world strewn with ruins, Ruby and her mysterious companion Sapphire
 **Game Art Team:**
 - Isabelle Borcard: Lead Game Art
 - Eliot Depres: Main Level Artist
-- Diana Vadi: Graphic Designer & 2D Illustrator
 
 **Audio Team:**
-- Samuel Rochat: Lead Audio & Wwise Implementation Expert
+- Samuel Rochat: Lead Audio & Wwise Integrator
 
-**Content Creation**
+**Special Thanks**
+- Diana Vadi: Graphic Designer & 2D Illustrator
 - Bryan Mettraux Ramirez: Game Trailer Editor
 
 **Contributors:**
-- Johan Walder: Audio
-- Yannis von Will: Audio
-- Killian Rossier: Audio
-- Luca Prati: Audio
-- Arber haxidema: Audio
-- Louise Durmaz: Audio
-- Dylan Fracheboud: Audio
-- Alexis Haldy: Refactoring, Debugging
-- Mélissa Houriet: Made Sapphire's model.
-- Samuel Blanc: Made some gameplay models.
+- Games Programming: Alexis Haldy
+- Game Art: Mélissa Houriet, Samuel Blanc
+- Audio: Johan Walder, Yannis von Will, Killian Rossier, Luca Prati, Arber haxidema, Louise Durmaz, Dylan Fracheboud
 
 ### How it looks like
 
@@ -73,3 +66,60 @@ Here is a **gameplay** video:
 - Working with **audio engineers**
 - **Polishing** a game
 - **Pitching** a game
+
+### Events
+
+##### Fantasy Basel
+
+- **Location**: Basel (Switzerland).
+- **Dates**: 29 to 31 May 2025.
+- **Team members on site**: **Constantin Verine** and Olivier Pachoud (all 3 days), Isabelle Borcard, Diana Vadi and Bryan Mettraux Ramirez (1 day).
+
+</br></br>
+<div>
+<a href="\assets\ressources\ressourceRuby\1.jpg">
+  <img src="\assets\ressources\ressourceRuby\1.jpg" alt="Event photo 1">
+</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; row-gap: 1%; column-gap: 1%;">
+  <a href="\assets\ressources\ressourceRuby\2.jpg" target="_blank" style="flex: 0 0 49%;">
+    <img src="\assets\ressources\ressourceRuby\2.jpg" alt="Event photo 2">
+  </a>
+  <a href="\assets\ressources\ressourceRuby\3.jpg" target="_blank" style="flex: 0 0 49%;">
+    <img src="\assets\ressources\ressourceRuby\3.jpg" alt="Event photo 3">
+  </a>
+    <a href="\assets\ressources\ressourceRuby\4.jpg" target="_blank" style="flex: 0 0 49%;">
+    <img src="\assets\ressources\ressourceRuby\4.jpg" alt="Event photo 4">
+  </a>
+    <a href="\assets\ressources\ressourceRuby\5.jpg" target="_blank" style="flex: 0 0 49%;">
+    <img src="\assets\ressources\ressourceRuby\5.jpg" alt="Event photo 5">
+  </a>
+    <a href="\assets\ressources\ressourceRuby\6.jpg" target="_blank" style="flex: 0 0 49%;">
+    <img src="\assets\ressources\ressourceRuby\6.jpg" alt="Event photo 6">
+  </a>
+    <a href="\assets\ressources\ressourceRuby\7.jpg" target="_blank" style="flex: 0 0 49%;">
+    <img src="\assets\ressources\ressourceRuby\7.jpg" alt="Event photo 7" >
+  </a>
+      <a href="\assets\ressources\ressourceRuby\C1.jpg" target="_blank" style="flex: 0 0 49%;">
+    <img src="\assets\ressources\ressourceRuby\C1.jpg" alt="Event photo 8">
+  </a>
+      <a href="\assets\ressources\ressourceRuby\C2.jpg" target="_blank" style="flex: 0 0 49%;">
+    <img src="\assets\ressources\ressourceRuby\C2.jpg" alt="Event photo 9">
+  </a>
+      <a href="\assets\ressources\ressourceRuby\C3.jpg" target="_blank" style="flex: 0 0 49%;">
+    <img src="\assets\ressources\ressourceRuby\C3.jpg" alt="Event photo 10">
+  </a>
+      <a href="\assets\ressources\ressourceRuby\C5.jpg" target="_blank" style="flex: 0 0 49%;">
+    <img src="\assets\ressources\ressourceRuby\C5.jpg" alt="Event photo 12">
+  </a>
+</div>
+
+### Statistics
+During the event and the week that followed, **our itch.io page** for the game **racked up 104 views**. 
+
+<div class="gallery">
+  <a href="\assets\ressources\ressourceRuby\itch_views.png" >
+    <img src="\assets\ressources\ressourceRuby\itch_views.png" alt="Event photo 1" style="width: 100%; height: auto;">
+      <p><em>Graph showing the number of views on our itch.io page.</em></p>
+  </a>
+</div>
