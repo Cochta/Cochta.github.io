@@ -21,9 +21,18 @@ For the **Game Programmers**, this project served as the **main focus of the sem
 
 The goal was to create a **vertical slice** within a **six-month timeframe** (from September to February) — delivering a **polished gameplay** segment that showcases the **core mechanics** and **vision** of the final game. The project was designed to provide a **semi-professional production experience**, encouraging students to **specialise** in their respective fields and **collaborate** as they would in a **real development environment**.
 
+
+<a href="\assets\ressources\ressourceRuby\affiche.png">
+  <img src="\assets\ressources\ressourceRuby\affiche.png" alt="Affiche">
+</a>
+
 ### Pitch
 
 In a fantasy world strewn with ruins, Ruby and her mysterious companion Sapphire must work together to progress, with the sole mission of restoring the scattered crystals. To do this, Ruby is able to perform physical interactions, while Sapphire can fire projectiles with a variety of behaviours
+
+### Trailer
+
+<iframe width="100%" height="460" src="https://youtube.com/embed/flT1fxRbw_8?si=kfQI-VU6dPvqqlL3" title="Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Team
 
@@ -50,8 +59,8 @@ In a fantasy world strewn with ruins, Ruby and her mysterious companion Sapphire
 
 ### How it looks like
 
-Here is a **gameplay** video:
-<iframe width="100%" height="460" src="https://www.youtube.com/embed/YNXXZ5jRn7E?si=2fGeLgE3zW_Po6mc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Here is a **full gameplay** video:
+<iframe width="100%" height="460" src="https://www.youtube.com/embed/4d4-JtT6Mpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### What did I learn 
 
@@ -114,12 +123,11 @@ Here is a **gameplay** video:
   </a>
 </div>
 
-### Statistics
+##### Statistics
 During the event and the week that followed, **our itch.io page** for the game **racked up 104 views**. 
 
 <div class="gallery">
   <a href="\assets\ressources\ressourceRuby\itch_views.png" >
-    <img src="\assets\ressources\ressourceRuby\itch_views.png" alt="Event photo 1" style="width: 100%; height: auto;">
-      <p><em>Graph showing the number of views on our itch.io page.</em></p>
+    <img src="\assets\ressources\ressourceRuby\itch_views.png" alt="stats" style="width: 100%; height: auto;">
   </a>
 </div>
