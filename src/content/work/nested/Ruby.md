@@ -19,7 +19,7 @@ tags:
 
 For the **Game Programmers**, this project served as the **main focus of the semester**, while for the **Game Artists** and **Audio Engineers**, it was a **side project** alongside their other academic commitments.
 
-The goal was to create a **vertical slice** within a **six-month timeframe** (from September to February) — delivering a **polished gameplay** segment that showcases the **core mechanics** and **vision** of the final game. The project was designed to provide a **semi-professional production experience**, encouraging students to **specialise** in their respective fields and **collaborate** as they would in a **real development environment**.
+The goal was to create a **vertical slice** within a **six-month timeframe** (from September to February), to deliver a **polished gameplay** segment that showcases the **core mechanics** and **vision** of the final game. The project was designed to provide a **semi-professional production experience**, encouraging students to **specialise** in their respective fields and **collaborate** as they would in a **real development environment**.
 
 
 <a href="\assets\ressources\ressourceRuby\affiche.png">
