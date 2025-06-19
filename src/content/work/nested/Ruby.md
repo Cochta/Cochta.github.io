@@ -51,6 +51,7 @@ In a fantasy world strewn with ruins, Ruby and her mysterious companion Sapphire
 **Special Thanks**
 - Diana Vadi: Graphic Designer & 2D Illustrator
 - Bryan Mettraux Ramirez: Game Trailer Editor
+- Maxime Roch: Voice Actor
 
 **Contributors:**
 - Games Programming: Alexis Haldy
