@@ -1,7 +1,7 @@
 ---
 title: Ruby and The Lost Crystals
 publishDate: 2024-03-04 00:00:00
-img: /assets/rubyShowcase.gif
+img: /assets/RubyShowcase.gif
 img_alt: gif of the game
 description: |
   A 3D stylized puzzle shooter set in the ancient ruins of the Crystalins, a lost race of living stones. Solve puzzles and use magic projectiles to restore their scattered crystals.
@@ -13,6 +13,8 @@ tags:
   - Wwise
 ---
 
+<iframe src="https://store.steampowered.com/widget/3807810/?l=english" frameborder="0" width="100%" height="190"></iframe>
+
 ### Overview
 
 *Ruby and the Lost Crystals* is a **collaborative game project** developed during the **third year of the Bachelor's programme in Games Programming at SAE Institute Geneva**. It brought together students from the school's **Game Programming**, **Game Art**, and **Audio Engineering** departments.
@@ -21,7 +23,7 @@ For the **Game Programmers**, this project served as the **main focus of the sem
 
 The goal was to create a **vertical slice** within a **six-month timeframe** (from September to February), to deliver a **polished gameplay** segment that showcases the **core mechanics** and **vision** of the final game. The project was designed to provide a **semi-professional production experience**, encouraging students to **specialise** in their respective fields and **collaborate** as they would in a **real development environment**.
 
-
+<span></span>
 <a href="\assets\ressources\ressourceRuby\affiche.png">
   <img src="\assets\ressources\ressourceRuby\affiche.png" alt="Affiche">
 </a>
@@ -32,7 +34,7 @@ In a fantasy world strewn with ruins, Ruby and her mysterious companion Sapphire
 
 ### Trailer
 
-<iframe width="100%" height="460" src="https://youtube.com/embed/flT1fxRbw_8?si=kfQI-VU6dPvqqlL3" title="Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="460" src="https://youtube.com/embed/3ox41kX3m6Y" title="Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Team
 
@@ -61,7 +63,7 @@ In a fantasy world strewn with ruins, Ruby and her mysterious companion Sapphire
 ### How it looks like
 
 Here is a **full gameplay** video:
-<iframe width="100%" height="460" src="https://www.youtube.com/embed/4d4-JtT6Mpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="460" src="https://www.youtube.com/embed/msrqK0ubWnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### What did I learn 
 
