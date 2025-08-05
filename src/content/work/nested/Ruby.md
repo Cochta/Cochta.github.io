@@ -1,7 +1,7 @@
 ---
 title: Ruby and The Lost Crystals
 publishDate: 2024-03-04 00:00:00
-img: /assets/RubyShowcase.gif
+img: /assets/rubyShowcase.gif
 img_alt: gif of the game
 description: |
   A 3D stylized puzzle shooter set in the ancient ruins of the Crystalins, a lost race of living stones. Solve puzzles and use magic projectiles to restore their scattered crystals.
