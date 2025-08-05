@@ -25,7 +25,7 @@ The **compute shader implementation** was developed with the support of **fellow
 
 ### How it looks like
 
-Here is a gif of the **monothreaded CPU** simulation:
+Here is a gif of the **monothreaded CPU** simulation with 1'200 particles:
 
 <img alt="Small gif" width="100%" src="/assets/SPH.gif" />
 
