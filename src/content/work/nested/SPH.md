@@ -18,13 +18,22 @@ This project is a **real-time 3D fluid simulation** using the **Smoothed Particl
 
 To optimize neighbor searches, the simulation uses a **Spatial Hash Grid**, enabling efficient retrieval of nearby particles per frame. The simulation runs at **60 FPS with 1000 particles** on a **single-threaded CPU**. The simulation is integrated into "[**Bark**](/work/nested/bark)" my own **physics engine**.
 
-**WORK IN PROGRESS**: I'm currently working on a **compute shader** version of the simulation to significantly improve performance and support a higher number of particles.
+The simulation now runs on a **compute shader**, offloading particle computations to the **GPU** for a massive **performance boost**. This upgrade enables **real-time** performance with **thousands of particles**, opening the door to more complex and visually rich fluid behavior.
+
+The **compute shader implementation** was developed with the support of **fellow Games Programming student at SAE Institute Geneva Olivier Pachoud**, who specialized in raytraced rendering and used my fluid simulation. 
+[Click here to view his project](https://chocolive24.github.io/project/bachelors-project-fluid-simulation-raytracing-rendering/)
 
 ### How it looks like
 
-Here is a gif of the **CPU** simulation:
+Here is a gif of the **monothreaded CPU** simulation:
 
 <img alt="Small gif" width="100%" src="/assets/SPH.gif" />
+
+Here is a gif of the **compute shader** simulation with 40'000 particles (COMMING SOON):
+
+### Bachelor's thesis
+
+  <iframe src="/assets/ConstantinVerineBachelorOfScience.pdf#navpanes=0&toolbar=1&statusbar=1&view=Fit" width="100%" height="800px"></iframe>
 
 
 ### What did I learn
@@ -37,10 +46,11 @@ Here is a gif of the **CPU** simulation:
 
 - **Performance Profiling**: Analyzed and optimized CPU performance to maintain real-time frame rates.
 
-- **Parallel Computation**: Began transitioning physics computations to GPU via **compute shaders** to support larger-scale simulations.
+- **Parallel Computation**: Transitioned physics computations to GPU via **compute shaders** to support larger-scale simulations.
 
 - **Engine Integration**: Embedded the simulation within my **own physics engine** "[**Bark**](/work/nested/bark)", improving modularity and system-level understanding of engine architecture.
 
 ### Source Code & Download
 
+- [Download my CPU SPH Fluid simulation ](https://github.com/Cochta/Bark3D/releases/download/SPH_V1.0/SPHFluidSimulationScene.zip)
 - [GitHub Repository of the 3D physics engine](https://github.com/Cochta/Bark3d)
