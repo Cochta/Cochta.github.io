@@ -27,9 +27,11 @@ The **compute shader implementation** was developed with the support of **fellow
 
 Here is a gif of the **monothreaded CPU** simulation with 1'200 particles:
 
-<img alt="Small gif" width="100%" src="/assets/SPH.gif" />
+<img alt="gif cpu 1200 particles" width="100%" src="/assets/SPH.gif" />
 
-Here is a gif of the **compute shader** simulation with 40'000 particles (COMMING SOON):
+Here is a gif of the **compute shader** simulation with 40'000 particles:
+
+<img alt="gif gpu 40k particles" width="100%" src="/assets/40k.gif" />
 
 ### Bachelor's thesis
 
