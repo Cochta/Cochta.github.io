@@ -16,7 +16,7 @@ tags:
 
 This project is a **real-time 3D fluid simulation** using the **Smoothed Particle Hydrodynamics (SPH)** method. Implemented **from scratch** in **C++**, the simulation models fluid behavior by representing water as a collection of particles that interact through **pressure**, **viscosity**, and **external forces**. Particles are accelerated using **force computations** derived from SPH equations and integrated over time using a stable numerical solver.
 
-To optimize neighbor searches, the simulation uses a **Spatial Hash Grid**, enabling efficient retrieval of nearby particles per frame. The simulation runs at **60 FPS with 1000 particles** on a **single-threaded CPU**. The simulation is integrated into "[**Bark**](/work/nested/bark)" my own **physics engine**.
+To optimize neighbor searches, the simulation uses a **Spatial Hash Grid**, enabling efficient retrieval of nearby particles per frame. The simulation runs at **60 FPS with 1600 particles** on a **single-threaded CPU**. The simulation is integrated into "[**Bark**](/work/nested/bark)" my own **physics engine**.
 
 The simulation now runs on a **compute shader**, offloading particle computations to the **GPU** for a massive **performance boost**. This upgrade enables **real-time** performance with **thousands of particles**, opening the door to more complex and visually rich fluid behavior.
 
@@ -31,7 +31,7 @@ Here is a gif of the **monothreaded CPU** simulation with 1'200 particles:
 
 Here is a gif of the **compute shader** simulation with 40'000 particles:
 
-<img alt="gif gpu 40k particles" width="100%" src="/assets/40k.gif" />
+<img alt="gif gpu 40k particles" width="100%" src="/assets/SPH2.gif" />
 
 ### Bachelor's thesis
 
